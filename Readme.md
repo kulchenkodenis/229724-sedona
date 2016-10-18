@@ -1,7 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Kulchenko Denis](https://up.htmlacademy.ru/htmlcss/15/user/229724).
-* Наставник: `Неизвестно`.
+* Наставник: [Роман Коробейников]
+(https://up.htmlacademy.ru/htmlcss/15/user/245335)
 
 ---
 
