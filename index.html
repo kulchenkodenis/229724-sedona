@@ -4,13 +4,15 @@
 <head>
   <meta charset="utf-8">
   <title>Sedona</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <div class="page-maincontainer">
     <header>
-      <div class="navigation">
+      <div class="navigation clearfix">
         <ul>
           <li>
             <a href="#">Информация</a>
@@ -19,10 +21,10 @@
             <a href="#">Фото и видео</a>
           </li>
           <li>
-            <a href="#">Карта штата</a>
+           <a href="hotels.html">Гостиницы</a>
           </li>
           <li>
-            <a href="hotels.html">Гостиницы</a>
+            <a href="#">Карта штата</a>
           </li>
         </ul>
       </div>
@@ -41,12 +43,12 @@
         </div>
       </div>
       <div class="container">
-        <h1>Седона - небольшой городок в Аризоне, заслуживающий большего</h1>
+        <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон</p>
       </div>
 
       <div class="reasons-block">
-       <div class="row-true-city">
+       <div class="row clearfix">
         <div class="block city-block">
           <h2>Настоящий городок</h2>
           <div class="reason">№1</div>
@@ -57,7 +59,8 @@
                <img src="img/true-city.jpg" alt="Ture City" width="800" height="256">
           </div>
         </div>
-
+        
+        <div class="row clearfix">
         <div class="block app-block">
           <h2>Жилье</h2>
           <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
@@ -70,18 +73,20 @@
           <h2>Сувениры</h2>
           <p>Не только китайского, но и местного производства!</p>
         </div>
-       <div class="devil-row">
+        </div>
+        
+       <div class="row clearfix">
         <div class="bridge-pic">
             <img src="img/bridge.jpg" alt="Devil's bridge" width="800" height="256">
         </div>
         <div class="block devil-block">
-          
           <h2>Там есть мост дьявола</h2>
           <div class="reason">№2</div>
           <p>Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
         </div>
         </div> 
-        <div class="reason-row">
+        
+        <div class="row clearfix block-gray">
         <div class="block reason-3">
           <h2>Небольшая площадь</h2>
           <div class="reason">№3</div>
@@ -102,7 +107,8 @@
 
       <div class="search-form">
         <h2>Заинтересовались?</h2>
-        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <p>Укажите предполагаемые даты поездки,<br>
+         и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <div class="form">
           <a href="#">Поиск гостиниц в Седоне</a>
           <form action="#" method="post">
@@ -138,15 +144,15 @@
     </main>
 
     <footer>
-      <div class="visit">
+      <div class="fot-block visit">
         <a href="index.html">#visitsedona</a>
       </div>
-      <div class="social">
-        <a href="#" title="twitter"></a>
-        <a href="#" title="facebook"></a>
-        <a href="#" title="youtube"></a>
+      <div class="fot-block social">
+        <a class="soc-btn" href="#" title="twitter">TW</a>
+        <a class="soc-btn" href="#" title="facebook">FB</a>
+        <a class="soc-btn" href="#" title="youtube">YT</a>
       </div>
-      <div class="dev-team">
+      <div class="fot-block dev-team">
         <span class="web-by">Website by</span>
         <a href="https://htmlacademy.ru/">
           <img src="img/academy-logo.png" alt="html academy" width="113" height="39">

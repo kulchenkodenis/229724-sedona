@@ -4,6 +4,12 @@ h2,
 h3 {
   color: #000;
   text-transform: uppercase;
+  font-family: 'PT Sans', sans-serif;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
 }
 
 
@@ -19,21 +25,38 @@ header {
   position: relative;
 }
 
+.navigation ul {
+  padding: 0;
+  margin: 0;
+}
+
 .navigation li {
   list-style: none;
   display: inline-block;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 
 .navigation li:nth-child(1),
-.navigation li:nth-child(2),
+.navigation li:nth-child(2) {
+  width: 240px;
+  float: left;
+  text-align: left;
+}
+
+.navigation li:nth-child(3),
 .navigation li:nth-child(4) {
-  margin-left: 72px;
-  margin-right: 72px;
+  width: 240px;
+  float: right;
+  text-align: right;
+}
+
+.navigation li:first-child {
+  margin-left: 73px;
 }
 
 .navigation li:nth-child(3) {
-  margin-left: 200px;
-  margin-right: 72px;
+  margin-right: 73px;
 }
 
 .navigation a {
@@ -54,159 +77,35 @@ header {
 
 header .top-logo {
   position: absolute;
-  top: -16px;
-  left: 550px;
+  top: 0;
+  left: 50%;
+  margin-left: -69px;
 }
 
 
 /*Оформление основного блока*/
 
 .container {
-  width: 600px;
-  margin: 0 auto;
+  width: 100%;
   text-align: center;
+  margin-bottom: 55px;
+}
+
+.container h1 {
+  font-size: 21px;
+  line-height: 26px;
+  width: 500px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.container p {
+  font-size: 14px;
   line-height: 26px;
 }
 
-main .container h1 {
-  font-size: 21px;
-  margin-bottom: 40px;
-  text-align: center;
-}
-
-main .container p {
-  font-size: 14px;
-}
-
-
-/*Блок "5 причин"*/
-
-.block {
-  width: 33%;
-  text-align: center;
-}
-
-.block h2 {
-  font-size: 21px;
-  line-height: 21px;
-}
-
-.block p {
-  font-size: 14px;
-  line-height: 21px;
-  width: 335px;
-  margin: 0 auto;
-}
-
-.city-block {
-  background: #81b3d2;
-  color: #fff;
-  float: left;
-}
-
-.city-block h2 {
-  width: 150px;
-  margin: 0 auto;
-  color: #fff;
-  margin-top: 50px;
-}
-
-.city-block p {
-  margin-bottom: 50px;
-}
-
-.block .reason {
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
-
-.app-block,
-.food-block,
-.memento-block {
-  float: left;
-}
-
-.bridge-pic {
-  width: 66%;
-  float: left;
-}
-
-.devil-block {
-  background: #81b3d2;
-  color: #fff;
-  float: right;
-}
-
-.devil-block h2 {
-  width: 180px;
-  margin: 0 auto;
-  color: #fff;
-  margin-top: 50px;
-}
-
-.devil-block p {
-  margin-bottom: 60px;
-}
-
-.reason-3,
-.reason-4,
-.reason-5 {
-  float: left;
-  background-color: #eeeeee;
-}
-
-
-/*Поисковая форма*/
-
-.search-form {
-  width: 575px;
-  margin: 55px auto;
-  text-align: center;
-}
-
-
-/*Подвал*/
-
-footer {
+.row {
   width: 100%;
-}
-
-footer .visit {
-  width: 400px;
-  float: left;
-}
-
-footer .social {
-  width: 400px;
-  float: right;
-}
-
-footer .dev-team {
-  width: 400px;
-  float: right;
-}
-
-
-/*Оформление второй страницы*/
-
-
-/*Форма поиска*/
-
-.search-hotel {
-  background-image: url("../img/hotels-bgn.jpg");
-  color: #fff;
-}
-
-.search-hotel .inf-block,
-.search-hotel .residence-block {
-  float: left;
-  padding: 15px;
-  margin-left: 30px;
-  margin-right: 30px;
-}
-
-.search-hotel .right-part {
-  float: right;
 }
 
 .clearfix::after {
@@ -215,19 +114,274 @@ footer .dev-team {
   clear: both;
 }
 
+.block {
+  width: 33.33%;
+  float: left;
+  text-align: center;
+  min-height: 256px;
+}
+
+.city-block {
+  width: 33.33%;
+  float: left;
+  text-align: center;
+  background-color: #81b3d2;
+  color: #fff;
+  min-height: 256px;
+}
+
+.block h2 {
+  width: 150px;
+  font-size: 21px;
+  line-height: 21px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+.app-block h2::before,
+.food-block h2::before,
+.memento-block h2::before {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  vertical-align: middle;
+}
+
+.app-block h2::before {
+  width: 75px;
+  height: 72px;
+  background-image: url(../img/house.png);
+}
+
+.food-block h2::before {
+  width: 74px;
+  height: 70px;
+  background-image: url(../img/burger.png);
+}
+
+.memento-block h2::before {
+  width: 64px;
+  height: 76px;
+  background-image: url(../img/souvenir.png);
+}
+
+.memento-block h2 {
+    margin-top: 42px;
+}
+
+.app-block {
+  margin-bottom: 74px;
+}
+
+.city-block h2 {
+  color: #fff;
+  margin-top: 50px;
+}
+
+.block .reason {
+  margin-bottom: 25px;
+}
+
+.block p {
+  width: 330px;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0 auto;
+}
+
+.city-pic {
+  float: right;
+  width: 66.67%;
+  height: 256px;
+}
+
+.bridge-pic {
+  float: left;
+  width: 66.66%;
+  height: 256px;
+}
+
+.devil-block {
+  width: 33.33%;
+  float: right;
+  text-align: center;
+  background-color: #81b3d2;
+  color: #fff;
+  min-height: 256px;
+}
+
+.devil-block h2 {
+  width: 155px;
+  color: #fff;
+}
+
+.reason-3 p {
+  width: 220px;
+}
+
+.reason-4 p {
+  width: 261px;
+}
+
+.block-gray {
+  background-color: #eeeeee;
+}
+
+/*Оформление формы поиска на главной странице*/
+
+.search-form {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.search-form h2 {
+    font-size: 30px;
+    line-height: 24px;
+}
+
+.search-form p {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+/*Подвал*/
+
+.fot-block {
+    width: 240px;
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 125px;
+}
+
+.visit a {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    color: #000;
+}
+
+.fot-block .soc-btn {
+   display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #81b3d2;
+}
+
+ .fot-block a {
+    text-decoration: none;
+}
+
+.dev-team img {
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+
+
+/*Оформление второй страницы*/
+
+
+/*Форма поиска*/
+
+.search-hotel {
+    width: 100%;
+    background-image: url("../img/hotels-bgn.jpg");
+    color: #fff;
+}
+
+.search-hotel .inf-block,
+.search-hotel .residence-block {
+  float: left;
+    width: 160px;
+    margin-left: 73px;
+}
+
+.search-hotel p {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: bold;
+}
+
+.search-hotel label {
+    font-size: 14px;
+    line-height: 21px;
+}
+.inf-block label,
+.residence-block label{
+    display: block;
+   
+    margin-bottom: 0;
+}
+
+.search-hotel .residence-block {
+    margin-left: 80px;
+}
+
+.search-hotel .right-part {
+  float: right;
+    width: 330px;
+    margin-right: 73px;
+}
+
+/*Форма отображения цен*/
+
+.price-for-day .from-to {
+    display: inline-block;
+    width: 330px;
+}
+
+.from-to input[type=number] {
+    width: 100px;
+    background-color: transparent;
+    color: #ffffff;
+    text-align: center;
+}
+
+/*Кнопка "Показать"*/
+
+.right-part input[type=submit] {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 3px;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+
 
 /*Результаты поиска*/
 
+.search-filter {
+    margin-top: 35px;
+    margin-bottom: 66px;
+}
+
 .search-filter li {
   display: inline-block;
+    margin: 0;
+}
+
+.search-filter ul {
+   
+    margin-left: 73px;
+    margin-right: 73px;
+   
 }
 
 .search-filter .finded {
+  width: 135px;
   font-size: 21px;
   line-height: 26px;
-  padding-right: 10px;
+ 
   margin-right: 30px;
   font-weight: bold;
+    
 }
 
 .sorted a {
@@ -255,8 +409,18 @@ footer .dev-team {
 
 /*Результат поиска*/
 
+.search-result {
+    padding: 0;
+    margin: 0;
+    margin-left: 73px;
+    margin-right: 73px;
+  
+}
+
 .search-result li {
-  list-style: none;
+    list-style: none;
+    margin-top: 35px;
+    margin-bottom: 66px;
 }
 
 li .hotel-img {
@@ -270,3 +434,66 @@ li .hotel-info {
 li .hotel-rate {
   float: right;
 }
+
+.hotel-info {
+    width: 270px;
+    height: 90px;
+    margin-left: 35px;
+    
+}
+
+.hotel-info .hotel-name {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    
+}
+
+.hotel-info .half-block {
+    width: 82px;
+    float: left;
+}
+
+.hotel-info .half-block-2 {
+    width: 150px;
+    float: right;
+}
+
+
+.hotel-info a {
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: bold;
+    color: #fff;
+    padding: 5px 15px;
+}
+
+.hotel-info .type-app,
+.hotel-info .price {
+    display: block;
+    font-size: 14px;
+    line-height: 21px;
+    color: #333;
+    margin-bottom: 14px;
+}
+
+.hotel-info .more {
+    background: #81b3d2;
+    
+}
+
+.hotel-info .reserv {
+    background: #766357;
+}
+
+.hotel-rate .rate {
+    background: #f2f2f2;
+    color: #666;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 5px 15px;
+}
+    
