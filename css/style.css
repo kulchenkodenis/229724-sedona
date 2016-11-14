@@ -4,7 +4,7 @@ h2,
 h3 {
   color: #000;
   text-transform: uppercase;
-  font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+  font-family: 'PT Sans', "Helvetica", "Arial", sans-serif;
 }
 
 ul {
@@ -203,6 +203,49 @@ header .top-logo {
 
 .block .reason {
   margin-bottom: 25px;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.reason .res-number {
+    position: relative;
+    display: inline;
+    margin: 0px;
+    padding: 0px 5px;
+    
+}
+
+.reason .res-number::before,
+.reason .res-number::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    height: 2px;
+    width: 15px;
+    background-color: #fff;
+}
+
+.reason .res-number::before {
+    right: 100%;
+}
+
+.reason .res-number::after {
+    left: 100%;
+}
+
+.reason-3 .res-number::after ,
+.reason-3 .res-number::before {
+    background-color: #000;
+}
+
+.reason-4 .res-number::after ,
+.reason-4 .res-number::before {
+    background-color: #000;
+}
+
+.reason-5 .res-number::after ,
+.reason-5 .res-number::before {
+    background-color: #000;
 }
 
 .block p {
@@ -318,6 +361,7 @@ header .top-logo {
   line-height: 26px;
   font-weight: bold;
   margin-bottom: 30px;
+  vertical-align: middle;
 }
 
 .arrival label,
@@ -328,7 +372,9 @@ header .top-logo {
 
 .arrival input[type=number],
 .departure input[type=number] {
-  width: 315px;
+    
+    float: right;
+  width: 290px;
   height: 25px;
   font-weight: bold;
   color: #000;
@@ -337,18 +383,33 @@ header .top-logo {
   padding-left: 15px;
 }
 
+.calendar {
+    float: right;
+    width: 25px;
+    background-color: #f2f2f2;
+    background-image: url("../img/calendar.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    padding-top: 14px;
+    padding-bottom: 13px;
+    padding-right: 12px;
+}
+
 input[type=number]::-webkit-input-placeholder {
   color: #000;
   font-weight: bold;
 }
 
-/*::after {
-    content: "";
-    display: block;
-    width: 21px;
-    height: 22px;
-    background-image: url("../img/calendar.png");
-}*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
 
 .type-blck {
   width: 100%;
@@ -382,7 +443,18 @@ input[type=number]::-webkit-input-placeholder {
 }
 
 .right-type .number-block {
-  margin-left: 15px;
+    margin-left: 15px;
+    float: right;
+}
+
+.minus, .plus {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: bold;
+    color: #a9a9a9;
+    cursor: pointer;
+    border: none;
+    background-color: #f2f2f2;
 }
 
 .type-blck .number-block {
