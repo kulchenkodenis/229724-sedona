@@ -23,6 +23,7 @@ ul {
 header {
   background: #ffffff;
   position: relative;
+    h
 }
 
 .navigation ul {
@@ -33,8 +34,8 @@ header {
 .navigation li {
   list-style: none;
   display: inline-block;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .navigation li:nth-child(1),
@@ -182,6 +183,8 @@ header .top-logo {
   background-image: url(../img/burger.png);
 }
 
+
+
 .memento-block h2::before {
   width: 64px;
   height: 76px;
@@ -203,49 +206,48 @@ header .top-logo {
 
 .block .reason {
   margin-bottom: 25px;
-    font-size: 14px;
-    line-height: 21px;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .reason .res-number {
-    position: relative;
-    display: inline;
-    margin: 0px;
-    padding: 0px 5px;
-    
+  position: relative;
+  display: inline;
+  margin: 0px;
+  padding: 0px 5px;
 }
 
 .reason .res-number::before,
 .reason .res-number::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    height: 2px;
-    width: 15px;
-    background-color: #fff;
+  content: '';
+  position: absolute;
+  top: 50%;
+  height: 2px;
+  width: 10px;
+  background-color: #fff;
 }
 
 .reason .res-number::before {
-    right: 100%;
+  right: 100%;
 }
 
 .reason .res-number::after {
-    left: 100%;
+  left: 100%;
 }
 
-.reason-3 .res-number::after ,
+.reason-3 .res-number::after,
 .reason-3 .res-number::before {
-    background-color: #000;
+  background-color: #000;
 }
 
-.reason-4 .res-number::after ,
+.reason-4 .res-number::after,
 .reason-4 .res-number::before {
-    background-color: #000;
+  background-color: #000;
 }
 
-.reason-5 .res-number::after ,
+.reason-5 .res-number::after,
 .reason-5 .res-number::before {
-    background-color: #000;
+  background-color: #000;
 }
 
 .block p {
@@ -285,7 +287,11 @@ header .top-logo {
 }
 
 .reason-4 p {
-  width: 261px;
+  width: 270px;
+}
+
+.food-block p {
+    width: 295px;
 }
 
 .block-gray {
@@ -298,6 +304,7 @@ header .top-logo {
 .search-form {
   text-align: center;
   margin-top: 40px;
+    
 }
 
 .search-form h2 {
@@ -312,9 +319,10 @@ header .top-logo {
 }
 
 .form {
-    position: relative;
+  position: relative;
   width: 576px;
   margin: 0 auto;
+  
 }
 
 .search-btn {
@@ -328,18 +336,20 @@ header .top-logo {
   color: #fff;
   padding-top: 25px;
   padding-bottom: 25px;
+  
 }
 
 .true-form {
-    position: absolute;
-    top: 76px;
-    width: 100%;
-    background-color: #ffffff;
+  position: absolute;
+  top: 76px;
+  width: 100%;
+  background-color: #ffffff;
+    
 }
 
 .hidden {
-    position: absolute;
-    top: -99999px;
+  position: absolute;
+  top: -99999px;
 }
 
 .true-form form {
@@ -366,16 +376,21 @@ header .top-logo {
 
 .arrival label,
 .departure label {
-  float: left;
+    float: left;
   width: 101px;
+  margin-top: 5px;
+}
+
+button, input {
+     font-family: 'PT Sans', "Helvetica", "Arial", sans-serif;
 }
 
 .arrival input[type=number],
 .departure input[type=number] {
-    
-    float: right;
+   
+  float: right;
   width: 290px;
-  height: 25px;
+  height: 35px;
   font-weight: bold;
   color: #000;
   background-color: #f2f2f2;
@@ -384,15 +399,14 @@ header .top-logo {
 }
 
 .calendar {
-    float: right;
-    width: 25px;
-    background-color: #f2f2f2;
-    background-image: url("../img/calendar.png");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    padding-top: 14px;
-    padding-bottom: 13px;
-    padding-right: 12px;
+  float: right;
+  width: 25px;
+  height: 37px;
+  background-color: #f2f2f2;
+  background-image: url("../img/calendar.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  padding-right: 12px;
 }
 
 input[type=number]::-webkit-input-placeholder {
@@ -402,14 +416,13 @@ input[type=number]::-webkit-input-placeholder {
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-	-webkit-appearance: none;
-	margin: 0;
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 input[type='number'] {
-    -moz-appearance: textfield;
+  -moz-appearance: textfield;
 }
-
 
 .type-blck {
   width: 100%;
@@ -431,6 +444,7 @@ input[type='number'] {
 .left-type label {
   width: 80px;
   float: left;
+  margin-top: 5px;
 }
 
 .left-type .number-block {
@@ -438,28 +452,33 @@ input[type='number'] {
 }
 
 .right-type label {
+  float: left;
   width: 80px;
-  margin-left: 30px;
+ margin-top: 5px;
+    margin-left: 20px;
 }
 
 .right-type .number-block {
-    margin-left: 15px;
-    float: right;
+  margin-left: 15px;
+  float: right;
 }
 
-.minus, .plus {
-    font-size: 16px;
-    line-height: 26px;
-    font-weight: bold;
-    color: #a9a9a9;
-    cursor: pointer;
-    border: none;
-    background-color: #f2f2f2;
+.minus,
+.plus {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #a9a9a9;
+  cursor: pointer;
+  border: none;
+  background-color: #f2f2f2;
+  margin-top: 5px;
 }
 
 .type-blck .number-block {
   display: inline-block;
   width: 115px;
+  height: 35px;
   background-color: #f2f2f2;
 }
 
@@ -471,19 +490,19 @@ input[type='number'] {
 }
 
 input[type=submit] {
-    display: block;
-    width: 100%;
-    font-size: 21px;
-    line-height: 26px;
-    font-weight: bold;
-    background-color: #81b3d2;
-    color: #ffffff;
-    border: none;
-    padding-top: 17px;
-    padding-bottom: 17px;
-    text-transform: uppercase;
-    cursor: pointer;
-    margin-top: 30px;
+  display: block;
+  width: 100%;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  background-color: #81b3d2;
+  color: #ffffff;
+  border: none;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 30px;
 }
 
 
