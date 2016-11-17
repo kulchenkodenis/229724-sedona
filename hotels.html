@@ -41,25 +41,25 @@
           <div class="inf-block">
             <p>Инфраструктура:</p>
             <label for="pool">
-              <input type="checkbox" name="pool" id="pool" checked>Бассейн</label>
+              <input type="checkbox" name="pool" id="pool" checked><span class="indicator"></span>Бассейн</label>
             <br>
             <label for="parking">
-              <input type="checkbox" name="parking" id="parking">Парковка</label>
+              <input type="checkbox" name="parking" id="parking"><span class="indicator"></span>Парковка</label>
             <br>
             <label for="wi-fi">
-              <input type="checkbox" name="wifi" id="wi-fi">Wi-fi</label>
+              <input type="checkbox" name="wifi" id="wi-fi"><span class="indicator"></span>Wi-fi</label>
             <br>
           </div>
           <div class="residence-block">
             <p>Тип жилья:</p>
             <label for="hotel">
-              <input type="checkbox" name="hotel" id="hotel" checked>Гостиница</label>
+              <input type="checkbox" name="hotel" id="hotel" checked><span class="indicator"></span>Гостиница</label>
             <br>
             <label for="motel">
-              <input type="checkbox" name="motel" id="motel" checked>Мотель</label>
+              <input type="checkbox" name="motel" id="motel" checked><span class="indicator"></span>Мотель</label>
             <br>
             <label for="aparts">
-              <input type="checkbox" name="aparts" id="aparts" checked>Апартаменты</label>
+              <input type="checkbox" name="aparts" id="aparts" checked><span class="indicator"></span>Апартаменты</label>
             <br>
           </div>
           <div class="right-part">
@@ -68,27 +68,30 @@
             </div>
             <div class="from-to">
               <label for="from">От
-                <input type="number" id="from" value="0">
+                <input type="text" name="min" id="from" value="0">
               </label>
               <label for="to">До
-                <input type="number" id="to" value="3000">
+                <input type="text" name="max" id="to" value="3000">
               </label>
             </div>
             <div class="slider">
-              <div class="circle"></div>
-              <div class="rail-white"></div>
-              <div class="circle"></div>
-              <div class="rail-gray"></div>
+
+              <div class="rail">
+                <div class="bar"></div>
+              </div>
+              <div class="circle min"></div>
+              <div class="circle max"></div>
+
             </div>
-            <input type="submit" value="Показать">
+            <button class="btn-transparent" type="submit">Показать</button>
           </div>
         </form>
       </div>
 
       <div class="search-filter">
-         <div class="sorted">
+        <div class="sorted">
           <ul>
-           <li class="finded">Найдено: 3</li>
+            <li class="finded">Найдено: 3</li>
             <li>Сортировка:</li>
             <li>
               <a class="chosen-one" href="#">По цене</a>
@@ -99,12 +102,14 @@
             <li>
               <a href="#">По рейтингу</a>
             </li>
+            <li class="switchers">
+              <div class="down"></div>
+              <div class="up"></div>
+            </li>
           </ul>
+
         </div>
-        <div class="switchers">
-          <div class="normal"></div>
-          <div class="chosen-one"></div>
-        </div>
+
       </div>
 
 
@@ -124,8 +129,8 @@
               <a href="#" class="reserv">Забронировать</a>
             </div>
           </div>
-          <div class="hotel-rate">
-            <div class="stars">
+          <div class="hotel-rate clearfix">
+            <div class="stars clearfix">
               <ul>
                 <li>
                   <div class="star"></div>
@@ -141,9 +146,10 @@
                 </li>
               </ul>
             </div>
-            <div class="rate">Рейтинг: 8,5</div>
-          </div>
-        </li>
+            <div class="raiting">Рейтинг: 8,5</div>
+            </div>
+            
+         </li>
         <li class="clearfix">
           <div class="hotel-img">
             <img src="img/desert-quail.jpg" alt="Desert Quail Inn" width="135" height="90">
@@ -160,7 +166,7 @@
             </div>
           </div>
           <div class="hotel-rate">
-            <div class="stars">
+            <div class="stars clearfix">
               <ul>
                 <li>
                   <div class="star"></div>
@@ -170,7 +176,7 @@
                 </li>
               </ul>
             </div>
-            <div class="rate">Рейтинг: 8,9</div>
+            <div class="raiting">Рейтинг: 8,9</div>
           </div>
         </li>
         <li class="clearfix">
@@ -189,7 +195,7 @@
             </div>
           </div>
           <div class="hotel-rate">
-            <div class="stars">
+            <div class="stars clearfix">
               <ul>
                 <li>
                   <div class="star"></div>
@@ -202,7 +208,7 @@
                 </li>
               </ul>
             </div>
-            <div class="rate">Рейтинг: 9,2</div>
+            <div class="raiting">Рейтинг: 9,2</div>
           </div>
         </li>
       </ul>
@@ -224,7 +230,7 @@
         </a>
       </div>
     </footer>
-    </div>
+  </div>
 
 </body>
 

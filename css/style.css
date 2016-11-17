@@ -23,7 +23,7 @@ ul {
 header {
   background: #ffffff;
   position: relative;
-    h
+  h
 }
 
 .navigation ul {
@@ -183,8 +183,6 @@ header .top-logo {
   background-image: url(../img/burger.png);
 }
 
-
-
 .memento-block h2::before {
   width: 64px;
   height: 76px;
@@ -291,7 +289,7 @@ header .top-logo {
 }
 
 .food-block p {
-    width: 295px;
+  width: 295px;
 }
 
 .block-gray {
@@ -304,7 +302,6 @@ header .top-logo {
 .search-form {
   text-align: center;
   margin-top: 40px;
-    
 }
 
 .search-form h2 {
@@ -322,7 +319,6 @@ header .top-logo {
   position: relative;
   width: 576px;
   margin: 0 auto;
-  
 }
 
 .search-btn {
@@ -336,7 +332,6 @@ header .top-logo {
   color: #fff;
   padding-top: 25px;
   padding-bottom: 25px;
-  
 }
 
 .true-form {
@@ -344,7 +339,7 @@ header .top-logo {
   top: 76px;
   width: 100%;
   background-color: #ffffff;
-    
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 }
 
 .hidden {
@@ -376,18 +371,20 @@ header .top-logo {
 
 .arrival label,
 .departure label {
-    float: left;
+  float: left;
   width: 101px;
   margin-top: 5px;
 }
 
-button, input {
-     font-family: 'PT Sans', "Helvetica", "Arial", sans-serif;
+button,
+input {
+  font-family: 'PT Sans', "Helvetica", "Arial", sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 .arrival input[type=number],
 .departure input[type=number] {
-   
   float: right;
   width: 290px;
   height: 35px;
@@ -454,8 +451,8 @@ input[type='number'] {
 .right-type label {
   float: left;
   width: 80px;
- margin-top: 5px;
-    margin-left: 20px;
+  margin-top: 5px;
+  margin-left: 20px;
 }
 
 .right-type .number-block {
@@ -465,14 +462,15 @@ input[type='number'] {
 
 .minus,
 .plus {
-  font-size: 16px;
+  width: 30px;
+  font-size: 20px;
   line-height: 26px;
   font-weight: bold;
   color: #a9a9a9;
   cursor: pointer;
   border: none;
   background-color: #f2f2f2;
-  margin-top: 5px;
+  height: 35px;
 }
 
 .type-blck .number-block {
@@ -483,7 +481,8 @@ input[type='number'] {
 }
 
 .number-block input[type=number] {
-  width: 40px;
+  width: 30px;
+  height: 30px;
   border: none;
   background-color: #f2f2f2;
   text-align: center;
@@ -580,6 +579,8 @@ footer {
   width: 100%;
   background: #000 url("../img/hotels-bgn.jpg") no-repeat;
   color: #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .search-hotel .inf-block,
@@ -602,52 +603,162 @@ footer {
 
 .inf-block label,
 .residence-block label {
+  position: relative;
   display: block;
-  margin-bottom: 0;
+  margin-bottom: 10px;
+  padding-left: 35px;
 }
 
 .search-hotel .residence-block {
   margin-left: 80px;
 }
 
-.search-hotel .right-part {
+.search-hotel input[type=checkbox] {
+    display: none;
+}
+
+ .search-hotel input[type=checkbox]+.indicator::before {
+    content: '';
+    position: absolute;
+    left: 0;
+     top: -1px;
+    width: 25px;
+    height: 25px;
+    background-image: url("../img/chkbox.png");
+    background-repeat: no-repeat;
+}
+
+.search-hotel input[type=checkbox]:checked +.indicator::before {
+    background-image: url("../img/chkbox-chkd.png");
+}
+
+
+
+/*Форма отображения цен*/
+
+.right-part {
   float: right;
   width: 330px;
   margin-right: 73px;
 }
 
-
-/*Форма отображения цен*/
-
-.price-for-day .from-to {
-  display: inline-block;
-  width: 330px;
+.price-for-day p {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 600;
+    margin-bottom: 9px;
 }
 
-.from-to input[type=number] {
-  width: 50px;
-  background-color: transparent;
-  color: #ffffff;
-  text-align: center;
+.from-to {
+    position: relative;
+    height: 36px;
+    margin-bottom: 20px;
+    font-size: 0;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
 }
 
+.from-to::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 22px;
+    background-color: #ffffff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.from-to label {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 38px;
+    vertical-align: top;
+    cursor: pointer;
+    width: 90px;
+    padding-left: 65px;
+}
+
+.from-to input {
+    width: 50px;
+    margin: 0;
+    color: inherit;
+    font: inherit;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+/*Slider*/
+
+.slider {
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.slider .rail {
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.slider .bar {
+    width: 80%;
+    height: 2px;
+    background-color: #ffffff;
+}
+
+.circle {
+    position: absolute;
+    top: -9px;
+    width: 4px;
+    height: 4px;
+    background: #ababab;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    cursor: pointer;
+}
+
+.circle:hover {
+    background: #1e5081;
+}
+
+.min {
+    left: 0;
+}
+
+.max {
+    left: 80%;
+}
 
 /*Кнопка "Показать"*/
 
-.right-part input[type=submit] {
-  background-color: transparent;
-  border: 2px solid #ffffff;
-  color: #fff;
-  padding: 10px 30px;
-  border-radius: 3px;
-  margin-top: 30px;
-  margin-left: 100px;
+.btn-transparent {
+    display: block;
+    margin: 0 auto;
+    padding: 6px 35px;
+    font-size: 14px;
+    line-height: 21px;
+    color: #ffffff;
+    text-transform: uppercase;
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
 }
 
+.btn-transparent:hover {
+  color: #000000;
+
+  background: #ffffff;
+}
 
 /*Результаты поиска*/
 
 .search-filter {
+    width: 100%;
+    display: inline-block;
   margin-top: 35px;
   margin-bottom: 66px;
 }
@@ -658,7 +769,7 @@ footer {
 }
 
 .search-filter ul {
-  margin-left: 73px;
+    margin-left: 73px;
   margin-right: 73px;
 }
 
@@ -668,6 +779,11 @@ footer {
   line-height: 26px;
   margin-right: 30px;
   font-weight: bold;
+}
+
+.search-filter .sorted {
+    width: 100%;
+    display: inline-block;
 }
 
 .sorted a {
@@ -692,6 +808,30 @@ footer {
   color: #81b3d2;
 }
 
+ .switchers {
+    float: right;
+    width: 100px;
+}
+
+.switchers .down {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin: 0 auto;
+    margin-top: 5px;
+    border: 7px solid transparent;
+    border-bottom: 10px solid #cccccc;
+}
+
+.switchers .up {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin: 0 auto;
+    margin-top: 5px;
+    border: 7px solid transparent;
+    border-top: 10px solid #a2c7de;
+}
 
 /*Результат поиска*/
 
@@ -772,4 +912,36 @@ li .hotel-rate {
 
 .hotel-info .reserv {
   background: #766357;
+}
+
+.stars ul {
+    float: right;
+    width: 100px;
+    padding: 0;
+    margin: 0;
+    margin-top: 5px;
+    text-align: right;
+    margin-bottom: 35px;
+}
+
+.stars li {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.star {
+   width: 20px;
+    height: 20px;
+    background-image: url("../img/star.png");
+    background-repeat: no-repeat;
+}
+
+.raiting {
+    width: 100px;
+    height: 20px;
+    padding: 6px 15px;
+    background-color: #f2f2f2;
+    color: #666666;
 }
