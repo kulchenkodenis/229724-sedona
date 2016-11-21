@@ -4,7 +4,7 @@ h2,
 h3 {
   color: #000;
   text-transform: uppercase;
-  font-family: 'PT Sans', "Helvetica", "Arial", sans-serif;
+  font-family: "PT Sans", "Helvetica", "Arial", sans-serif;
 }
 
 ul {
@@ -18,12 +18,12 @@ ul {
 .page-maincontainer {
   width: 1200px;
   margin: 0 auto;
+  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
 }
 
 header {
   background: #ffffff;
   position: relative;
-  h
 }
 
 .navigation ul {
@@ -98,6 +98,7 @@ header .top-logo {
 
 
 /*Оформление основного блока*/
+
 
 .sedona-bg {
   position: relative;
@@ -186,19 +187,19 @@ header .top-logo {
 .app-block h2::before {
   width: 75px;
   height: 72px;
-  background-image: url(../img/house.png);
+  background-image: url("../img/house.png");
 }
 
 .food-block h2::before {
   width: 74px;
   height: 70px;
-  background-image: url(../img/burger.png);
+  background-image: url("../img/burger.png");
 }
 
 .memento-block h2::before {
   width: 64px;
   height: 76px;
-  background-image: url(../img/souvenir.png);
+  background-image: url("../img/souvenir.png");
 }
 
 .memento-block h2 {
@@ -355,13 +356,13 @@ header .top-logo {
 }
 
 @keyframes bounce-up {
-  0%   {
+  0% {
     transform: translateY(2000px);
   }
-  70%  {
+  70% {
     transform: translateY(20px);
   }
-  90%  {
+  90% {
     transform: translateY(5px);
   }
   100% {
@@ -406,7 +407,7 @@ header .top-logo {
 
 button,
 input {
-  font-family: 'PT Sans', "Helvetica", "Arial", sans-serif;
+  font-family: "PT Sans", "Helvetica", "Arial", sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -414,50 +415,31 @@ input {
 .arrival input[type=number],
 .departure input[type=number] {
   float: right;
-  width: 290px;
+  width: 330px;
   height: 35px;
   font-weight: bold;
   color: #000;
   background-color: #f2f2f2;
   background-image: url("../img/calendar-sprite.png");
   background-repeat: no-repeat;
+  background-position: right -4px;
   border: none;
   padding-left: 15px;
 }
 
 .arrival input[type=number]:hover,
 .departure input[type=number]:hover {
-  background: #ebebeb;
+  background-color: #ebebeb;
+  background-position: right -88px;
 }
 
 .arrival input[type=number]:focus,
 .departure input[type=number]:focus {
   background: #ffffff;
+  background-position: right -42px;
   outline: none;
   border: 1px solid #e5e5e5;
 }
-
-
-/*.calendar {
-  float: right;
-  width: 25px;
-  height: 35px;
-  background-color: #f2f2f2;
-  background-image: url("../img/calendar-sprite.png");
-  background-repeat: no-repeat;
-  background-position: -5px -5px;
-  padding-right: 12px;
-}
-
-.calendar:hover {
-    background-image: url("../img/calendar-sprite.png");
-    background-position: -67px -5px;
-}
-
-.calendar:active {
-    background-position: -36px -5px;
-}
-*/
 
 input[type=number]::-webkit-input-placeholder {
   color: #000;
@@ -581,8 +563,6 @@ input[type=submit]:active {
   background: #5496bd;
   color: #6ca5c6;
 }
-
-
 
 
 /*Подвал*/
@@ -1043,7 +1023,6 @@ li .hotel-rate {
 }
 
 .hotel-info a {
-  color: #000;
   text-decoration: none;
   font-size: 14px;
   line-height: 21px;
