@@ -5,6 +5,7 @@ h3 {
   color: #000;
   text-transform: uppercase;
   font-family: "PT Sans", "Helvetica", "Arial", sans-serif;
+  background-color: #f2f2f2;
 }
 
 ul {
@@ -99,6 +100,9 @@ header .top-logo {
 
 /*Оформление основного блока*/
 
+main {
+  background-color: #ffffff;
+}
 
 .sedona-bg {
   position: relative;
@@ -132,6 +136,7 @@ header .top-logo {
   width: 500px;
   margin: 0 auto;
   margin-bottom: 20px;
+  background-color: #ffffff;
 }
 
 .container p {
@@ -172,6 +177,7 @@ header .top-logo {
   margin: 0 auto;
   margin-top: 50px;
   margin-bottom: 25px;
+  background-color: inherit;
 }
 
 .app-block h2::before,
@@ -320,6 +326,7 @@ header .top-logo {
 .search-form h2 {
   font-size: 30px;
   line-height: 24px;
+  background-color: inherit;
 }
 
 .search-form p {
@@ -435,10 +442,9 @@ input {
 
 .arrival input[type=number]:focus,
 .departure input[type=number]:focus {
-  background: #ffffff;
-  background-position: right -42px;
-  outline: none;
-  border: 1px solid #e5e5e5;
+  background-color: #ffffff;
+  background-position: right -46px;
+  outline: 1px solid #e5e5e5;
 }
 
 input[type=number]::-webkit-input-placeholder {
@@ -569,6 +575,7 @@ input[type=submit]:active {
 
 footer {
   position: relative;
+  background-color: #ffffff;
 }
 
 .pos-block {
