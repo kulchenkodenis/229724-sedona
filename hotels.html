@@ -6,7 +6,7 @@
   <title>Гостиницы</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/min-style.css">
 </head>
 
 <body>
@@ -29,7 +29,7 @@
         </ul>
       </div>
       <div class="top-logo">
-        <a href="index.html" title="Sedona">
+        <a href="#" title="Sedona">
           <img src="img/top-logo.png" width="138" height="70" alt="Sedona">
         </a>
       </div>
@@ -37,30 +37,30 @@
 
     <main>
       <div class="search-hotel clearfix">
-        <form action="#" method="post">
+        <form action="#" method="post" class="clearfix">
           <div class="inf-block">
             <p>Инфраструктура:</p>
             <label for="pool">
               <input type="checkbox" name="pool" id="pool" checked><span class="indicator"></span>Бассейн</label>
-            <br>
+           
             <label for="parking">
               <input type="checkbox" name="parking" id="parking" disabled><span class="indicator"></span>Парковка</label>
-            <br>
+          
             <label for="wi-fi">
               <input type="checkbox" name="wifi" id="wi-fi"><span class="indicator"></span>Wi-fi</label>
-            <br>
+          
           </div>
           <div class="residence-block">
             <p>Тип жилья:</p>
             <label for="hotel">
               <input type="checkbox" name="hotel" id="hotel" checked disabled><span class="indicator"></span>Гостиница</label>
-            <br>
+           
             <label for="motel">
               <input type="checkbox" name="motel" id="motel" checked><span class="indicator"></span>Мотель</label>
-            <br>
+            
             <label for="aparts">
               <input type="checkbox" name="aparts" id="aparts" checked><span class="indicator"></span>Апартаменты</label>
-            <br>
+          
           </div>
           <div class="right-part">
             <div class="price-for-day">
@@ -90,7 +90,7 @@
         <div class="sorted">
           <ul>
             <li class="finded">Найдено: 3</li>
-            <li>Сортировка:</li>
+            <li class="sorting">Сортировка:</li>
             <li>
               <a class="chosen-one" href="#">По цене</a>
             </li>
