@@ -187,7 +187,8 @@ main {
   content: '';
   display: block;
   margin: 0 auto;
-  margin-bottom: 25px;
+  margin-top: 60px;
+  margin-bottom: 31px;
   vertical-align: middle;
 }
 
@@ -207,15 +208,16 @@ main {
   width: 64px;
   height: 76px;
   background-image: url("../img/souvenir.png");
+    margin-top: 52px;
 }
 
-.memento-block h2 {
-  margin-top: 42px;
+
+.app-block,
+.food-block,
+.memento-block {
+    margin-bottom: 75px;
 }
 
-.app-block {
-  margin-bottom: 74px;
-}
 
 .city-block h2 {
   color: #fff;
@@ -266,6 +268,12 @@ main {
 .reason-5 .res-number::after,
 .reason-5 .res-number::before {
   background-color: #000;
+}
+
+.reason-3 .reason,
+.reason-4 .reason,
+.reason-5 .reason {
+    margin-bottom: 18px;
 }
 
 .block p {
@@ -321,38 +329,39 @@ main {
 
 .search-form {
   text-align: center;
-  margin-top: 40px;
 }
 
 .search-form h2 {
   font-size: 30px;
   line-height: 24px;
   background-color: inherit;
+  margin-top: 56px;
 }
 
 .search-form p {
   font-size: 14px;
   line-height: 24px;
-  margin-bottom: 37px;
+  margin-bottom: 55px;
 }
 
 .form {
   position: relative;
-  width: 576px;
+  width: 570px;
   margin: 0 auto;
 }
 
 .search-btn {
   display: block;
   width: 100%;
+  
   text-decoration: none;
   font-size: 21px;
   line-height: 26px;
   background: #766357;
   font-weight: bold;
   color: #fff;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .true-form {
@@ -405,6 +414,7 @@ main {
   font-size: 14px;
   line-height: 26px;
   font-weight: bold;
+    margin-top: 5px;
   margin-bottom: 30px;
   vertical-align: middle;
 }
@@ -613,9 +623,17 @@ footer {
   display: inline-block;
   vertical-align: middle;
   margin: 0 auto;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  margin-left: 140px;
+  padding-top: 33px;
+  padding-bottom: 35px;
+  margin-left: 132px;
+}
+
+.social {
+    margin-left: 142px;
+}
+
+.dev-team {
+    margin-left: 147px;
 }
 
 .visit a {
@@ -634,8 +652,8 @@ footer {
 
 .social a {
   display: block;
-  width: 50px;
-  height: 50px;
+  width: 46px;
+  height: 46px;
   background-color: #81b3d2;
 }
 
@@ -649,8 +667,8 @@ footer {
 
 .soc-bcg {
   display: block;
-  width: 50px;
-  height: 50px;
+  width: 46px;
+  height: 46px;
 }
 
 .soc-bcg:active {
@@ -714,8 +732,8 @@ footer {
   width: 100%;
   background: #669ec0 url("../img/hotels-bgn.jpg") no-repeat;
   color: #fff;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .search-hotel .inf-block,
@@ -919,7 +937,7 @@ input[type=checkbox]:checked:disabled +.indicator::before {
 
 .search-filter {
   width: 100%;
-  margin-top: 35px;
+  margin-top: 26px;
   padding-bottom: 33px;
   border-bottom: 1px solid #e5e5e5;
 }
@@ -1025,13 +1043,10 @@ input[type=checkbox]:checked:disabled +.indicator::before {
 
 .search-result li {
   list-style: none;
-  padding: 33px 73px;
+  padding: 30px 73px;
   border-bottom: 1px solid #e5e5e5;
 }
 
-.search-result .search-row {
-  max-height: 90px;
-}
 
 li .hotel-img {
   float: left;
@@ -1047,8 +1062,8 @@ li .hotel-rate {
 
 .hotel-info {
   width: 330px;
-  height: 100px;
-  margin-left: 35px;
+  height: 93px;
+  margin-left: 28px;
 }
 
 .hotel-info .hotel-name {
@@ -1059,14 +1074,14 @@ li .hotel-rate {
 }
 
 .hotel-info .half-block {
-  width: 120px;
+  width: 110px;
   float: left;
 }
 
 .hotel-info .half-block-2 {
   width: 150px;
   float: right;
-  margin-right: 60px;
+  margin-right: 65px;
 }
 
 .hotel-info a {
@@ -1077,7 +1092,7 @@ li .hotel-rate {
   font-weight: bold;
   vertical-align: middle;
   color: #fff;
-  padding: 5px 15px;
+  padding: 3px 15px;
 }
 
 .hotel-info .type-app,
@@ -1160,4 +1175,5 @@ li .hotel-rate {
   background-color: #f2f2f2;
   color: #666666;
   text-align: center;
+  margin-top: 5px;
 }
