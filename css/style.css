@@ -341,7 +341,7 @@ main {
 .search-form p {
   font-size: 14px;
   line-height: 24px;
-  margin-bottom: 55px;
+  margin-bottom: 46px;
 }
 
 .form {
@@ -1050,6 +1050,7 @@ input[type=checkbox]:checked:disabled +.indicator::before {
 
 li .hotel-img {
   float: left;
+    line-height: 0;
 }
 
 li .hotel-info {
@@ -1102,7 +1103,7 @@ li .hotel-rate {
   font-size: 14px;
   line-height: 21px;
   color: #333;
-  margin-bottom: 14px;
+  margin-bottom: 13px;
 }
 
 .hotel-info .more {
